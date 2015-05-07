@@ -1,11 +1,4 @@
-A test file containing one line of text
+Test number 2 changes
 
-UPDATED TEST LINE{SEAN}
+Further changes added
 
-TEST MESSAGE SEAN
-
-New test message sean
-
-Another test number 1
-
-Another test number 2
