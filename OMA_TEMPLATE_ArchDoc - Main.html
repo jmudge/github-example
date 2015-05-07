@@ -1,0 +1,435 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <title>OMA [ReleaseName] Architecture</title>
+    <meta charset='utf-8'>
+    <script src='http://openmobilealliance.github.io/Tools/builds/respec-oma-common.js'
+            async class='remove'>
+    </script>
+
+    <link rel="stylesheet" href="https://openmobilealliance.github.io/Common/styles/oma_spec.css">
+
+    <script class='remove'>
+      var respecConfig = {
+        // for editor use
+        docType: "", // options are BASE, RD, AD, TS, SUP, ETS, ORG
+        subtitle: "OMA-AD-<short-name>_Vx_y",
+        shortName:  "short-name",
+        iopURI: "",
+        otherLinks: [{
+          key: "Link Key",
+          data: [{
+            value: "Link Name",
+            href: "#location"
+          }]
+        }],
+        editors: [{
+          name:       "Editor Name",
+          url:        "http://example.com/",
+          company:    "Editor Company",
+          companyURL: "http://example.org/",
+          mailto:     "editor@example.com",
+          note:       "editor note"
+        }],
+
+        authors: [{
+          name:       "Author Name",
+          url:        "http://example.com/",
+          company:    "Author Company",
+          companyURL: "http://example.org/",
+          mailto:     "author@example.com",
+          note:       "author note"
+        }],
+
+
+        // for staff only
+        specStatus: "unofficial", // options are Draft, Candidate, Approved, Historic
+        publishDate: "",
+        tof: true,
+
+
+        // TODO this will be removed in later versions, and can safely be ignored
+        logos: [{
+          src: 'https://openmobilealliance.github.io/Common/images/oma_logo.jpg',
+          href: "http://openmobilealliance.org",
+          alt: "openmobilealliance.org",
+          id: 'speclogo',
+        }],
+
+      };
+    </script>
+    <style type="text/css">
+	.auto-style1 {
+		font-size: small;
+	}
+	.auto-style3 {
+		border-width: 0px;
+	}
+	.auto-style14 {
+		border-style: solid;
+		border-width: 1px;
+	}
+	.auto-style15 {
+		border-style: solid;
+		border-width: 1px;
+		background-color: #C0C0C0;
+	}
+	.auto-style16 {
+		border-style: solid;
+		border-width: 1px;
+		background-color: #808080;
+	}
+	</style>
+  </head>
+  <body>
+   <section id='abstract'>
+   </section>
+     
+   <section id='tof'>
+   </section>
+
+
+    <section>
+      <h2>Scope</h2>
+      <p>
+			<pre class='example'>
+				Briefly describe the scope of this document – how it presents the architecture of this particular enabler.  
+				Include an explanation of how this architecture relates to Open Mobile Alliance activity.  
+				If it adds clarity, also describe what is not in the scope of this architecture.   
+				<strong> DELETE THIS COMMENT </strong> 
+			</pre>
+      </p>
+     </section>
+    <section>
+      <h2>Introduction</h2>
+      <p>
+			<pre class='example'>	Describe the high level architecture in greater detail than provided in section 1.  
+	From a market perspective, this section should answer the following questions (in prose):
+   o What is the purpose of this architecture?
+   o What problems does this architecture solve?
+ <strong> TO BE DELETED </strong>
+			</pre>
+      </p>
+		<section>
+			<h2>Version 1.0</h2>
+			<p>
+				<pre class='example'>
+					This section provides a high level, concise and informative description of the <strong>main functionality</strong> supported 
+					in the initial enabler or reference release version described in this AD.  The description should be brief, 
+					target length should be a few paragraphs. When the enabler or reference release is finished, this description 
+					should be aligned with the final functionality.  					
+					<strong>DELETE THIS COMMENT</strong>
+				</pre>
+			</p>
+		</section>
+		<section>
+				<h2>Version x.y</h2>
+				<p>
+					<pre class='example'>
+						This section provides a high level, concise and informative description of <strong>main functionality</strong> supported 
+						in the initial enabler or reference release version described in this AD.  The description should be brief, 
+						target length should be a few paragraphs.   When the enabler or reference release is finished, this description 
+						should be aligned with the final functionality.  						
+						<strong>DELETE THIS COMMENT</strong>
+					</pre>
+				</p>
+		</section>
+		<section>
+					<h2>Version x.y.z</h2>
+					<p>
+						<pre class='example'>
+							This section should be included for each new service release covered with the AD.   
+							It should describe at a high level the main changes made to the AD compared to the previous version.  
+							The description should be brief, target length should be one paragraph.							
+							<strong>DELETE THIS COMMENT</strong>
+						</pre>
+					</p>
+		</section>
+	</section>
+
+	<section>
+		<h2>Architectural Model</h2>
+			<p>
+				<pre class='example'>
+					This section defines the enabler’s architectural model.  The model identifies: a) all internal functional 
+					components of this enabler, and b) all of the communication relationships between the components of this enabler 
+					and with other enablers and applications (including those specifications not defined by OMA).
+					
+					This section SHOULD contain a diagram of the architecture.  Diagrams in this section should contain logical entities only and not conflate 
+					logical entities with physical entities.  However, mobile terminals and networks may be shown because of their potential 
+					relevance in the design of the architecture.  Figure 1, Figure 2 (or a combination of them, if considered appropriate), 
+					are illustrative examples of an architectural diagram and should be modified to reflect this architecture.
+					
+					Working Groups SHOULD re-use functions specified by other enablers.  Working Groups should consult other Architecture Documents and Specifications 
+					to identify any of this architecture’s functionality (e.g. its systems, subsystems, interfaces and/or reference points, etc) 
+					that is already specified. 
+					
+					This section MAY include an explanation and/or diagram to show how this architecture relates to the various views as defined in  
+					“Inventory of Architectures and Services”.  This diagram and explanation, however, are optional.  
+					<strong>DELETE THIS COMMENT.</strong>
+				</pre>
+			</p>
+			<section>
+				<h2>Dependencies</h2>
+				<p>
+					<pre class='example'>
+This section MUST enumerate all of the dependencies this architecture has, in order to fulfil the approved enabler requirements 
+(both mandatory and optional).  Dependencies in this context are other OMA enablers and non-OMA specifications (e.g. RFC 2616) this 
+enabler calls (i.e. re-uses).  Each dependency MUST include a reference to the document(s) that specifies the depdency.  All of these 
+references MUST also be included in Section 2.1.
+
+The enumeration would be along the lines of a list with entries such as
+
+    - IMAP binary extension [RFC3516]
+    
+where the reference (e.g. RFC3516 in this example) would link to the fully qualifed reference in section 2.1 table.
+
+A dependency is actually to an interface and the intrinsic functions (required and re-used by this enabler) performed by the component 
+that exposes that interface.
+
+Note: Dependencies should not be confused with deployment options.
+If this architecture has no dependencies, then this section only needs to contain a statement as such. 
+
+If this architecture has dependencies on OMA Enablers, specific sub-sections shall describe those enablers and the interfaces used, as 
+well as the purpose for re-use in the context of this enabler.
+<strong>DELETE THIS COMMENT.</strong>
+					</pre>
+				</p>
+
+				<section>
+					<h2>OMA X Enabler</h2>
+					<p>
+						<pre class='example'>
+							This Enabler makes use of the following Interfaces from OMA X:
+X-1 Interface is exposed by the X Enabler and SHALL be used by this enabler as detailed in [X_AD]; 
+							<strong>DELETE THIS COMMENT.</strong>
+						</pre>
+					</p>
+					</section>
+					<section>
+						<h2>OMA Y Enabler</h2>
+						<p>
+							<pre class='example'>
+								OMA Y EnablerThis Enabler makes use of the following Interfaces from OMA Y:
+Y-1 Interface is exposed by the Y Enabler and SHALL be used by this Enabler as described in [Y_AD]; 
+								<strong>DELETE THIS COMMENT.</strong>
+							</pre>
+							</p>
+	</section>
+	</section>
+<section>
+
+		<h2>Architectural Diagram</h2>
+			<p>
+				<pre class='example'>
+					This section contains the architectural diagram for the enabler. The examples in figures 1 and 2, 
+					along with the legend, describe the drawing conventions to be followed. In some cases 
+					(an example figure is not shown here) the resulting architecture diagram may contain combinations of 
+					interfaces and reference points.
+					<strong>DELETE THIS COMMENT.</strong>
+					</pre>
+					</p>
+				</section>
+		
+<figure id="fig1_example">
+						<img src="TS/images/fig1_example.png" />
+						<figcaption>Example Figure</figcaption>
+						</figure>
+
+<figure id="fig2_example">
+						<img src="TS/images/fig2_example.png" />
+						<figcaption>Example Figure</figcaption>
+						</figure>
+
+	<section>
+		<h2>Functional Components and Interfaces/reference points definition</h2>
+			<p>
+				<pre class='example'>
+					This section describes all of the architecture’s functional components and the specified interfaces and/or reference points. 
+As a general guidance, the Architecture Document SHOULD define interfaces, wherever possible. 
+Each of the components should be described in a separate subsection and MUST contain at least the following information:
+  o	Name
+  o	Description
+  o	Responsibility (e.g. what does the component do/perform)
+Each component SHOULD have at least one interface or at least one reference point that can be used by some other functional component, enabler, application, etc.
+All of the interfaces and/or the reference points should be described in this section. 
+Interfaces and reference points MUST be described in a language-independent way.
+Each interface description MUST include at least the following information:
+  o	Name
+  o	Description
+  o	Entity that exposes the interface
+Each reference point description MUST include at least the following information:
+  o	Name
+  o	Description of all the functions exposed between the two entities
+  o	The two entities that are linked by this reference point
+Each reference point description SHOULD include the following information:
+  o	Name of each interface included in the reference point
+  
+Description of each interface included in the reference point
+
+Interface/reference point naming convention: 
+
+The name of an interface/reference point consists of a minimal number of characters (e.g. no longer than the WID's registered name), followed by a dash, followed by 
+a running number (starting at “1” and counting upwards in steps of 1 for each new interface/reference point).  Each work group decides about the character(s) for their 
+interfaces/reference point as long as there is no duplication with already existing names (work groups can consult ARC to confirm).  Names should be chosen in an intuitive 
+way to allow easy recognition of the interface/reference point.  Some examples are:
+     B-1	B stands for “Browsing”
+     POC-5	POC stands for “Push to Talk over Cellular”
+     MMS-7	MMS stands for “Multimedia Messaging”
+     
+Interface re-use convention: In case an interface from another enabler is re-used (e.g. exactly as is, as a profiled subset, or extended with additional Attribute Value Pairs), 
+the interface name is that of the other enabler.  That is, the interface name does not change, since the interface does not fundamentally change.  The interface structure and 
+placement of parameters and/or AVPs are already defined as part of the other enabler.
+
+Reference points re-use convention: 
+ In case a reference point from another enabler is re-used (i.e. all of its interfaces, and the two entities, as originally defined, linked through the reference point) then, the reference point name is that of the other enabler.  That is, the reference point name does not change, since the reference point does not fundamentally change.  The reference point structure and placement of parameters and/or AVPs are already defined as part of the other enabler.
+
+Detailed recommendations on how to re-use reference points may be found in the <i>“Architecture Best Practices”</i> document.
+
+Graphical representation convention:
+Reference points are depicted as a line and interfaces are depicted as an arrow. 
+
+
+					<strong>DELETE THIS COMMENT</strong>
+				</pre>
+		</section>
+
+		<section>
+			<h2>Security Considerations</h2>
+			<pre class='example'>
+			Describe security functionalities based on security requirements defined in corresponding Requirement Document. 
+Security functionalities should address and consider at least the following features:
+  o Authentication
+  o Authorization
+  o Data integrity
+  o Confidentiality
+  o Non-repudiation
+<strong>DELETE THIS COMMENT</strong>	
+	<section>
+	</section>
+	<section>
+	</section>
+	</pre>
+	</section>
+
+	<section>
+		<h2>Charging Considerations</h2>
+			<pre class='example'>
+				Describe charging functionalities based on charging requirements defined in corresponding Requirement Document.
+				 
+The following text MAY be used to identify functional components that may report Chargeable Events.  If used, “X” SHALL be replaced by the name 
+of the enabler being specified and “[OMA X RD]” SHALL be replaced by a reference to the Requirements Document for the enabler, and “OMA X functional entity 1,2,..” 
+SHALL be replaced by a list of functional components of the enabler that may report Chargeable Events.
+				<strong>DELETE THIS COMMENT</strong>	
+				</pre>		
+				</section>
+				
+<p class="auto-style1">The underlying network or other suitable entity may need  to  support the receiving of charging data or charging events triggered from an external mechanism 
+in order to fulfil the charging requirements described in [OMA X RD]. One such mechanisms is triggering through the OMA Charging Enabler.
+</p>
+<p class="auto-style1">
+The OMA Charging Enabler [OMA-CHG-AD] coordinates charging data triggers and flow from OMA X enablers into an underlying charging infrastructure, supporting charging 
+mechanisms, e.g. Online, Offline, Price Points.  Functional components that may optionally report Chargeable Events are:
+</p>
+		<span class="auto-style1">&nbsp;&nbsp;&nbsp;&nbsp; o	OMA X functional entity 1</span><br class="auto-style1">
+		<span class="auto-style1">&nbsp;&nbsp;&nbsp;&nbsp; o	OMA X functional entity 2</span><br class="auto-style1">
+		<span class="auto-style1">&nbsp;&nbsp;&nbsp;&nbsp; o	…</span>
+<p>
+	<pre class='example'>
+If the specification refers to common Charging functionality and does not involve specific Charging related specifications, this section MAY end with the following text:
+
+<strong>DELETE THIS COMMENT</strong>
+</pre>
+	<section>
+				
+	<p class="auto-style1">
+The interaction between these functional entities and the OMA Charging Enabler is described in [OMA-CHG-AD]. Description of how charging is performed is beyond the scope of the present specification.</p>	
+
+	<pre class='example'>
+If the specification involves specific Charging related functionality, then this section MAY include following text for each functional entity listed above.  If used, “OMA X functional entity i” SHALL
+be replaced by one of the functional entities listed above, and “[TS X Charging]” SHALL be replaced by a reference to the Technical Specification document where the charging functionality for this 
+functional entity is defined.  Please don’t forget to add this reference to section 2.2 above!
+
+<strong>DELETE THIS COMMENT</strong>
+</pre>
+
+
+
+<p class="auto-style1">
+The interaction between OMA X functional entity and the OMA Charging Enabler is described in [TS X Charging]. Description of how charging is performed is beyond the scope of the present specification.</p>	 
+</section>
+	</section>
+
+	 <section class='appendix'>
+		<h2>Flows (informative)</h2>
+			<p>
+				
+				<pre class='example'>
+The objective of this section is to describe the high-level logical flows between the architectural entities. 
+ o These flows should just serve for a better understanding of the architecture. Therefore it is recommended to add a minimum number of flows, which should be very high-level.
+
+<strong>DELETE THIS COMMENT</strong>
+				</pre>
+</section>
+
+	<section class='appendix'>
+		<h2>Additional Information</h2>
+			<pre class='example'>
+If needed, add annex to provide additional information to support the document.  In general, this information should be informative, as normative material should be 
+contained in the primary body of the document.
+
+Note that the styles for the headers in the appendix (App1, App2, App3) are different than the main body.  The use below is intended to validate the styles to be used.  Remove if not needed.
+
+<strong>DELETE THIS COMMENT</strong>
+			</pre>
+
+	<section class='appendix'>
+		<h2>App Headers</h2>
+			<pre class='example'>
+
+<strong>more text</strong>
+			</pre>
+			
+<section class='appendix'>
+		<h2>More Headers</h2>
+			<pre class='example'>
+
+<strong>more text</strong>
+			</pre>
+<section class='appendix'>
+		<h2>More Headers</h2>
+			<pre class='example'>
+
+<strong>more text</strong>
+			</pre>
+
+
+	                          <table>
+							  <caption align="bottom">Table 1 example Table</caption>									  
+							  <thead>							  
+								<tr>
+								  <td> </td>
+								  <td>Column1</td>
+								  <td>Column2</td>
+								</tr>							
+							  </thead>					  
+							  <tbody>
+								<tr>
+								  <td>Row1</td>
+								  <td>Grid 1,1 data</td>
+								  <td>Grid 1,2 data</td>
+								</tr>
+								<tr>
+								  <td>Row2</td>
+								  <td>Grid 2,1 data</td>
+								  <td>Grid 2,2 data</td>
+								</tr>							
+							  </tbody>
+							</table>
+						    
+
+
+	</section>
+   <section id='tof'></section>
+  </body>
+</html>
