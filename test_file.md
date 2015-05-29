@@ -9,3 +9,5 @@ New test message sean
 Another test number 1
 
 Another test number 2
+
+This part has been UPDATED as an example
