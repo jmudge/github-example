@@ -13,4 +13,4 @@ Another test number 2
 This part has been UPDATED as an example
 EVEN MORE CHANGES TO THIS FILE
 
-even more CHANGES
+Adding another test message
